@@ -4,9 +4,9 @@ import { TodoHead } from './todoHead';
 import { TodoFooter } from "./todofooter";
 
 const todolist = [
-    { id: Math.random(), name: 'Create React', chek: false },
-    { id: Math.random(), name: 'Create Todo list', chek: false },
-    { id: Math.random(), name: 'Add list', chek: false }
+    { id: 1, name: 'Create React', chek: false },
+    { id:2, name: 'Create Todo list', chek: false },
+    { id: 3, name: 'Add list', chek: false }
 
 
 ]
@@ -20,10 +20,11 @@ export const Home = () => {
 
     }, [])
 
+    
 
     return (
 
-        <div>
+        <>
             {
                 list ?
                     <div>
@@ -34,7 +35,7 @@ export const Home = () => {
                         }}
                             onChange={(newTodo) => {
                                 setList(list.map((i) => {
-                                    if (i.id===newTodo.id){
+                                    if (i.id ===newTodo.id){
                                         return newTodo
                                     }
                                     return i;
@@ -47,6 +48,6 @@ export const Home = () => {
             }
 
 
-        </div>
+        </>
     )
 }

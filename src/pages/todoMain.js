@@ -2,7 +2,7 @@
 import { Todolist } from "./todolist"
 export const TodoMain = ({list,onDelete,onChange,  })=>{
     return (
-        <div>
+        <>
 
 <div>
                 <h2>ToDo List</h2>
@@ -29,7 +29,7 @@ export const TodoMain = ({list,onDelete,onChange,  })=>{
 }</div>
 
 
-        </div>
+        </>
     )
 
 }
