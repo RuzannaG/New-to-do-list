@@ -1,6 +1,6 @@
 
 import { Todolist } from "./todolist"
-export const TodoMain = ({list,onDelete})=>{
+export const TodoMain = ({list,onDelete,onChange,  })=>{
     return (
         <div>
 
@@ -21,7 +21,7 @@ export const TodoMain = ({list,onDelete})=>{
         return(
             
             <div className="input-list">
-              <Todolist key={i.id} i={i} onDelete={onDelete}/>  
+              <Todolist key={i.id} i={i} onDelete={onDelete}  onChange={onChange}  />  
             
             </div>
         )
