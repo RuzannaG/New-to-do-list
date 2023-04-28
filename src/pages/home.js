@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { TodoMain } from "./todoMain";
 import { TodoHead } from './todoHead';
 import { TodoFooter } from "./todofooter";
+import Memofunc from './memo'
 
 const todolist = [
     { id: 1, name: 'Create React', chek: false },
@@ -47,7 +48,7 @@ export const Home = () => {
 
             }
 
-
+<Memofunc/>
         </>
     )
 }
